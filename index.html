@@ -27,6 +27,10 @@
 
 <body>
 
+  <div class="preloader">
+    <div class="loading-text">Loading...</div>
+  </div>
+
   <!-- header section -->
   <header class="header">
     <nav>
@@ -523,6 +527,17 @@
       const menu = document.querySelector(".nav-links");
       menu.classList.toggle("open");
     }
+  </script>
+
+  <script>
+    window.addEventListener("load", () => {
+  // Wait 2 seconds before hiding the preloader
+  setTimeout(() => {
+    document.querySelector(".preloader").style.display = "none";
+    document.querySelector(".main-content").style.display = "block";
+  }, 1000);
+});
+
   </script>
 
 
