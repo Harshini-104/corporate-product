@@ -9,9 +9,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 </head>
 
 <body>
@@ -24,12 +35,11 @@
       </div>
       <ul class="nav-links">
         <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./service.html">Service</a></li>
-        <li><a href="./faq.html">FAQs</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./dashboard.html">Dashboard</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./error.html">About</a></li>
+        <li><a href="./error.html">Service</a></li>
+        <li><a href="./error.html">Shop</a></li>
+        <li><a href="./error.html">Product</a></li>
+        <li><a href="./error.html">Dashboard</a></li>
         <a href="./login.html"><button class="loginbtn">Login</button></a>
       </ul>
       <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
@@ -41,12 +51,13 @@
 
   <section class="main">
     <div class="main-content">
-      <h1>Empowering Your Business with Smart Products</h1>
-      <p>Discover innovative corporate solutions designed to enhance productivity, streamline operations, and deliver
+      <h1 data-aos="zoom-in-down">Empowering Your Business with Smart Products</h1>
+      <p data-aos="zoom-in-down">Discover innovative corporate solutions designed to enhance productivity, streamline
+        operations, and deliver
         unmatched value to your organization.</p>
-      <div class="hero-buttons">
-        <a href="./service.html" class="btn primary">Explore Products</a>
-        <a href="./contact.html" class="btn secondary">Get in Touch</a>
+      <div class="hero-buttons" data-aos="zoom-in-down">
+        <a href="./product.html" class="btn primary">Explore Products</a>
+        <a href="./error.html" class="btn secondary">Get in Touch</a>
       </div>
     </div>
   </section>
@@ -56,21 +67,21 @@
   <section class="commit-section" id="commit">
     <div class="commit-container">
       <div class="commit-content">
-        <h2>Our Commitment to Corporate Excellence</h2>
-        <h3>Innovative Products. Reliable Partnerships. Trusted Solutions.</h3>
-        <p>
+        <h2 data-aos="fade-up">Our Commitment to Corporate Excellence</h2>
+        <h3 data-aos="fade-up">Innovative Products. Reliable Partnerships. Trusted Solutions.</h3>
+        <p data-aos="fade-up">
           At <strong>Stackly</strong>, we are dedicated to providing businesses with top-quality corporate products
           that drive efficiency, enhance brand image, and deliver long-term value. Our commitment goes beyond
           products — we create solutions that help organizations thrive in an ever-evolving market.
         </p>
 
-        <p>
+        <p data-aos="fade-up">
           Every item in our store is designed with precision, functionality, and corporate elegance in mind.
           From essential office supplies to cutting-edge digital tools, we ensure our clients experience
           performance, durability, and style in every purchase.
         </p>
 
-        <p>
+        <p data-aos="fade-up">
           With a strong focus on innovation and customer satisfaction, we aim to build partnerships that last.
           We believe your success is our success — and we stand by every product that carries our name.
         </p>
@@ -95,12 +106,13 @@
 
   <!-- section feature -->
   <main class="main-body">
-    <section class="panel">
-      <h2>Why Choose Our Corporate Product Store?</h2>
-      <p class="subtitle">Delivering efficiency, innovation, and reliability for every business product need.</p>
+    <section class="panel" id="animate">
+      <h2 data-aos="fade-up">Why Choose Our Corporate Product Store?</h2>
+      <p class="subtitle" data-aos="fade-up">Delivering efficiency, innovation, and reliability for every business
+        product need.</p>
 
       <div class="features">
-        <div class="feature">
+        <div class="feature" data-aos="flip-up">
           <div class="icon">🛒</div>
           <div>
             <h3>Wide Range of Products</h3>
@@ -108,7 +120,7 @@
           </div>
         </div>
 
-        <div class="feature">
+        <div class="feature" data-aos="flip-up">
           <div class="icon">⚙️</div>
           <div>
             <h3>Custom Procurement Options</h3>
@@ -116,7 +128,7 @@
           </div>
         </div>
 
-        <div class="feature">
+        <div class="feature" data-aos="flip-up">
           <div class="icon">🚚</div>
           <div>
             <h3>Fast & Reliable Delivery</h3>
@@ -124,7 +136,7 @@
           </div>
         </div>
 
-        <div class="feature">
+        <div class="feature" data-aos="flip-up">
           <div class="icon">💼</div>
           <div>
             <h3>Trusted by Enterprises</h3>
@@ -138,41 +150,41 @@
   <!-- section about -->
   <section class="about-section">
     <div class="about-content">
-      <h2>About Our Platform</h2>
-      <p class="intro">
+      <h2 data-aos="fade-up">About Our Platform</h2>
+      <p class="intro" data-aos="fade-up">
         Our Corporate Product Store platform is designed to simplify and strengthen the way businesses manage
         procurement, inventory, and corporate purchasing. We bring together top-quality products, smart automation,
         and seamless logistics to help enterprises operate efficiently and cost-effectively.
       </p>
 
       <div class="about-grid">
-        <div class="about-item">
-          <h3>Centralized Procurement</h3>
-          <p>
+        <div class="about-item" data-aos="flip-up">
+          <h3 data-aos="fade-up">Centralized Procurement</h3>
+          <p data-aos="fade-up">
             Streamline purchasing across departments with a single, unified store.
             Manage orders, budgets, and approvals all in one place.
           </p>
         </div>
 
-        <div class="about-item">
-          <h3>Verified Vendors</h3>
-          <p>
+        <div class="about-item" data-aos="flip-up">
+          <h3 data-aos="fade-up">Verified Vendors</h3>
+          <p data-aos="fade-up">
             Partner only with trusted suppliers who meet corporate standards for
             quality, compliance, and timely delivery.
           </p>
         </div>
 
-        <div class="about-item">
-          <h3>Smart Inventory Management</h3>
-          <p>
+        <div class="about-item" data-aos="flip-up">
+          <h3 data-aos="fade-up">Smart Inventory Management</h3>
+          <p data-aos="fade-up">
             Monitor stock levels, automate replenishment, and prevent overstocking
             with real-time analytics and reporting tools.
           </p>
         </div>
 
-        <div class="about-item">
-          <h3>Data-Driven Insights</h3>
-          <p>
+        <div class="about-item" data-aos="flip-up">
+          <h3 data-aos="fade-up">Data-Driven Insights</h3>
+          <p data-aos="fade-up">
             Make smarter purchasing decisions with data analytics, spending reports,
             and supplier performance metrics tailored to your organization.
           </p>
@@ -181,153 +193,280 @@
     </div>
   </section>
 
+  <!-- section product -->
+  <section class="product-section">
+    <div class="product-header">
+      <h2 data-aos="fade-up">Our Corporate Products</h2>
+      <p data-aos="fade-up">Discover high-quality corporate essentials designed to enhace your business operations and
+        employee experience
+      </p>
+
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card" data-aos="zoom-in" id="ani">
+        <img src="./image/laptop.jpeg" alt="Laptop">
+        <h3 data-aos="fade-up">Office Laptop</h3>
+        <p data-aos="fade-up">High-performance laptop for professional use, equipped with the latest technology.</p>
+        <a href="./product.html#laptop" class="product-btn" data-aos="fade-up">View Products</a>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in" id="ani1">
+        <img src="./image/chair.jpg" alt="Chair">
+        <h3 data-aos="fade-up">Ergonomic Chair</h3>
+        <p data-aos="fade-up">Comfortable, durable chairs designed to support proper posture during working hours.</p>
+        <a href="./product.html#chair" class="product-btn" data-aos="fade-up">View Products</a>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in" id="ani2">
+        <img src="./image/headphones.jpg" alt="Headphones">
+        <h3 data-aos="fade-up">Wireless Headphones</h3>
+        <p data-aos="fade-up">High-quality wireless headphones with noise cancellation for an immersive audio
+          experience.</p>
+        <a href="./product.html#headphone" class="product-btn" data-aos="fade-up">View Products</a>
+      </div>
+
+      <div class="product-card" data-aos="zoom-in" id="ani3">
+        <img src="./image/printer.jpeg" alt="Printer">
+        <h3 data-aos="fade-up">Printers</h3>
+        <p data-aos="fade-up">High-performance printers designed for professional use, equipped with latest technology.
+        </p>
+        <a href="./product.html#printer" class="product-btn" data-aos="fade-up">View Products</a>
+      </div>
+
+    </div>
+  </section>
+
   <!-- section shipping -->
 
   <section class="shipping-return">
-  <div class="shipping-container">
-    <div class="shipping-image">
-      <img src="./image/shipping.jpg" alt="Shipping and Returns">
-    </div>
+    <div class="shipping-container">
+      <div class="shipping-image">
+        <div class="image-collage">
+          <img src="./image/free.shipping.png" alt="Shipping 1" class="img1" data-aos="fade-down-right">
+          <img src="./image/24.png" alt="Shipping 2" class="img2" data-aos="fade-down-right">
+          <img src="./image/payment.png" alt="Shipping 3" class="img3" data-aos="fade-down-right">
+          <img src="./image/payment.png" alt="Shipping 4" class="img4" data-aos="fade-down-right">
+          <img src="./image/return.png" alt="Shipping 5" class="img5" data-aos="fade-down-right">
+        </div>
+      </div>
 
-    <div class="shipping-content">
-      <h2>Shipping & Returns</h2>
-      <p class="intro">
-        At Corporate Product Store, we prioritize fast, reliable, and secure delivery for all your business purchases.
-        Our shipping and return policies are designed to give you peace of mind and a smooth procurement experience.
-      </p>
-
-      <div class="shipping-details">
-        <h3>Fast & Reliable Delivery</h3>
-        <p>
-          We work with top logistics partners to ensure prompt delivery across all regions. 
-          Most orders are fulfilled within <strong>3-7 business days</strong>.
+      <div class="shipping-content">
+        <h2 data-aos="fade-up">Shipping & Returns</h2>
+        <p class="intro" data-aos="fade-up">
+          At Corporate Product Store, we prioritize fast, reliable, and secure delivery for all your business purchases.
+          Our shipping and return policies are designed to give you peace of mind and a smooth procurement experience.
         </p>
 
-        <h3>Easy Returns</h3>
-        <p>
-          If a product arrives damaged or doesn't meet your expectations, you can return it within 
-          <strong>7 days of delivery</strong>. Products should be unused and in original packaging.
-        </p>
+        <div class="shipping-details">
+          <h3 data-aos="fade-up">Fast & Reliable Delivery</h3>
+          <p data-aos="fade-up">
+            We work with top logistics partners to ensure prompt delivery across all regions.
+            Most orders are fulfilled within <strong>3-7 business days</strong>.
+          </p>
 
-        <h3>Refund Process</h3>
-        <p>
-          Refunds are processed within <strong>5-10 business days</strong> of approval through the original payment method.
-        </p>
+          <h3 data-aos="fade-up">Easy Returns</h3>
+          <p data-aos="fade-up">
+            If a product arrives damaged or doesn't meet your expectations, you can return it within
+            <strong>7 days of delivery</strong>. Products should be unused and in original packaging.
+          </p>
 
-        <h3>Need Help?</h3>
-        <p>
-          Reach our support team at 
-          <a href="mailto:support@corporatestore.com">support@corporatestore.com</a> 
-          or call <strong>+91 98765 43210</strong>.
-        </p>
+          <h3 data-aos="fade-up">Refund Process</h3>
+          <p data-aos="fade-up">
+            Refunds are processed within <strong>5-10 business days</strong> of approval through the original payment
+            method.
+          </p>
+
+          <h3 data-aos="fade-up">Need Help?</h3>
+          <p>
+            Reach our support team at
+            <a href="mailto:support@stackly.com" data-aos="fade-up">support@stackly.com</a>
+            or call <strong>+91 98765 43210</strong>.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 
 
   <!-- section platform -->
 
   <section class="platform-section">
-  <div class="platform-content">
-    <h2>Corporate Product Platform</h2>
-    <p class="subtitle">
-      Empowering businesses with efficiency, quality, and innovation through our advanced corporate product ecosystem.
-    </p>
-
-    <div class="platform-grid">
-      <div class="platform-item">
-        <div class="icon">🛒</div>
-        <h3>Product Catalog</h3>
-        <p>Explore a wide range of corporate supplies, office essentials, and business-grade products all in one place.</p>
-      </div>
-
-      <div class="platform-item">
-        <div class="icon">⚙️</div>
-        <h3>Customized Solutions</h3>
-        <p>Get tailor-made procurement options and product bundles designed to meet your organization's unique needs.</p>
-      </div>
-
-      <div class="platform-item">
-        <div class="icon">🤝</div>
-        <h3>Corporate Partnerships</h3>
-        <p>Collaborate with trusted vendors and partners for long-term supply and transparent service management.</p>
-      </div>
-
-      <div class="platform-item">
-        <div class="icon">📦</div>
-        <h3>Order Management</h3>
-        <p>Track, manage, and optimize bulk orders seamlessly with integrated order tracking and invoicing tools.</p>
-      </div>
-
-      <div class="platform-item">
-        <div class="icon">🚚</div>
-        <h3>Delivery & Logistics</h3>
-        <p>Enjoy reliable delivery networks ensuring fast, secure, and consistent product fulfillment nationwide.</p>
-      </div>
-
-      <div class="platform-item">
-        <div class="icon">📜</div>
-        <h3>Quality Assurance</h3>
-        <p>All products and vendors are verified to maintain the highest standards in quality and compliance.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- section footer -->
-
-<footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-about">
-      <img src="./image/logo-removebg-preview.png" alt="logo" class="comlogo">
-      <p>
-        We simplify business purchasing by offering high-quality corporate products, verified vendors,
-        and efficient procurement solutions that empower organizations to operate smarter.
+    <div class="platform-content">
+      <h2 data-aos="fade-up">Corporate Product Platform</h2>
+      <p class="subtitle" data-aos="fade-up">
+        Empowering businesses with efficiency, quality, and innovation through our advanced corporate product ecosystem.
       </p>
-    </div>
 
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+      <div class="platform-grid">
+        <div class="platform-item" data-aos="zoom-in-down">
+          <div class="icon">🛒</div>
+          <h3>Product Catalog</h3>
+          <p>Explore a wide range of corporate supplies, office essentials, and business-grade products all in one
+            place.</p>
+        </div>
 
-    <div class="footer-support">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Help Center</a></li>
-        <li><a href="#">Shipping & Returns</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-      </ul>
-    </div>
+        <div class="platform-item" data-aos="zoom-in-down">
+          <div class="icon">⚙️</div>
+          <h3>Customized Solutions</h3>
+          <p>Get tailor-made procurement options and product bundles designed to meet your organization's unique needs.
+          </p>
+        </div>
 
-    <div class="footer-contact">
-      <h4>Contact Us</h4>
-      <p><strong>Email:</strong> support@corporatestore.com</p>
-      <p><strong>Phone:</strong> +91 98765 43210</p>
-      <p><strong>Address:</strong> 123 Business Avenue, Chennai, India</p>
+        <div class="platform-item" data-aos="zoom-in-down">
+          <div class="icon">🤝</div>
+          <h3>Corporate Partnerships</h3>
+          <p>Collaborate with trusted vendors and partners for long-term supply and transparent service management.</p>
+        </div>
 
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+        <div class="platform-item" data-aos="zoom-in-down">
+          <div class="icon">📦</div>
+          <h3>Order Management</h3>
+          <p>Track, manage, and optimize bulk orders seamlessly with integrated order tracking and invoicing tools.</p>
+        </div>
+
+        <div class="platform-item" data-aos="zoom-in-down">
+          <div class="icon">🚚</div>
+          <h3>Delivery & Logistics</h3>
+          <p>Enjoy reliable delivery networks ensuring fast, secure, and consistent product fulfillment nationwide.</p>
+        </div>
+
+        <div class="platform-item" data-aos="zoom-in-down">
+          <div class="icon">📜</div>
+          <h3>Quality Assurance</h3>
+          <p>All products and vendors are verified to maintain the highest standards in quality and compliance.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
+  <!-- section footer -->
 
-  <div class="footer-bottom">
-    <p>© 2025 Corporate Product Store. All Rights Reserved.</p>
-  </div>
-</footer>
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <img src="./image/logo-removebg-preview.png" alt="logo" class="comlogo">
+        <p>
+          We simplify business purchasing by offering high-quality corporate products, verified vendors,
+          and efficient procurement solutions that empower organizations to operate smarter.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Email:</strong> support@corporatestore.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 123 Business Avenue, Chennai, India</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Corporate Product Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    VANTA.WAVES({
+      el: "#ani",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xe483ea,
+      shininess: 67.00
+    })
+  </script>
+
+  <script>
+    VANTA.WAVES({
+      el: "#ani2",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x5faede
+    })
+  </script>
+
+  <script>
+    VANTA.WAVES({
+      el: "#ani1",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x5ede62
+    })
+  </script>
+
+  <script>
+    VANTA.WAVES({
+      el: "#ani3",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xde5e5e
+    })
+  </script>
+  <script>
+    VANTA.NET({
+      el: "#animate",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x3fbdff,
+      points: 8.00,
+      spacing: 14.00
+    })
+  </script>
+
 
 
 
@@ -365,6 +504,16 @@
         animateCounters();
         counted = true;
       }
+    });
+  </script>
+
+  <script>
+    // $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: false,
+      mirror: true,
     });
   </script>
 

@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1d2671, #c33764);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+  width: auto;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+  filter: brightness(0) invert(1);
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffde59;
+}
+
+.loginbtn {
+  background: #ffffff;
+  color: #c33764;
+  border: none;
+  outline: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.loginbtn:hover {
+  background: #ffde59;
+  color: #1d2671;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(44, 62, 80, 0.95);
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    padding-left: 32px;
+    border-radius: 0 0 0 12px;
+    transition: height 0.4s ease;
+    gap: 25px;
+  }
+
+  .nav-links.open {
+    height: 510px;
+    width: 100%;
+    padding-top: 18px;
+  }
+
+  .nav-links li {
+    margin-bottom: 16px;
+  }
+
+  .loginbtn {
+    margin-bottom: 16px;
+  }
+}
+
+
+/* section laptops */
+
+.laptops {
+    background: white;
+    padding-top: 150px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1d2671;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-box {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.product-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 17px;
+    color: #c33764;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.review {
+    color: #ffb400;
+    font-size: 16px;
+}
+
+.pro-btn {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, red, blue);
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.pro-btn:hover {
+   opacity: 0.85;
+}
