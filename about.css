@@ -135,7 +135,7 @@ nav {
 /* section main */
 
 .about {
-  height: 90vh;
+  height: 100vh;
   background: linear-gradient(
       rgba(10, 20, 40, 0.75),
       rgba(10, 20, 40, 0.75)
@@ -223,7 +223,7 @@ nav {
   align-items: center;
   gap: 60px;
   padding: 100px 10%;
-  background: linear-gradient(135deg, #f9fafc 0%, #eef2f6 100%);
+  background: url("./image/bg1.jpg") no-repeat center center/cover fixed;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -235,9 +235,9 @@ nav {
 }
 
 .about-info h2 {
-  font-size: 2.8rem;
+  font-size: 40px;
   font-weight: 700;
-  color: #1a202c;
+  color: rgb(8, 0, 255);
   margin-bottom: 25px;
   position: relative;
 }
@@ -254,9 +254,9 @@ nav {
 }
 
 .about-info p {
-  font-size: 1.1rem;
+  font-size: 16px;
   line-height: 1.8;
-  color: #4a5568;
+  color: white;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -374,7 +374,7 @@ nav {
 }
 
 .team-member {
-  background: #ffffff;
+  background: linear-gradient(135deg, rgb(166, 244, 244), rgb(180, 203, 243), rgb(245, 149, 149));
   border-radius: 20px;
   width: 360px;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.05);
@@ -518,7 +518,7 @@ nav {
 /* section mission */
 
 .aboutsection {
-  background: #f9fafc;
+  background: url("./image/bg1.jpg") no-repeat center center/cover fixed;
   padding: 100px 120px;
   font-family: 'Poppins', sans-serif;
 }
@@ -552,7 +552,7 @@ nav {
 .abouttext h2 {
   font-size: 44px;
   font-weight: 700;
-  color: #1a202c;
+  color: rgb(0, 255, 251);
   margin-bottom: 25px;
   position: relative;
 }
@@ -570,7 +570,7 @@ nav {
 
 .abouttext p {
   font-size: 18px;
-  color: #4a5568;
+  color: white;
   line-height: 32px;
   margin-bottom: 25px;
 }
@@ -596,7 +596,7 @@ nav {
 
 .about-mission-vision p {
   font-size: 17px;
-  color: #4a5568;
+  color: white;
   line-height: 28px;
 }
 
@@ -619,52 +619,197 @@ nav {
 
 .aboutstats .stat p {
   font-size: 16px;
-  color: #2d3748;
+  color: white;
   font-weight: 500;
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
+  .aboutsection {
+    padding: 80px 60px;
+  }
+
   .aboutcontainer {
     flex-direction: column;
     text-align: center;
-  }
-
-  .aboutimage img {
-    height: 400px;
+    gap: 60px;
   }
 
   .abouttext {
     text-align: center;
   }
 
+  .abouttext h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .about-mission-vision {
     flex-direction: column;
-    text-align: center;
+    gap: 25px;
   }
 
   .aboutstats {
     justify-content: center;
+    gap: 30px;
   }
 }
 
+
 @media (max-width: 768px) {
   .aboutsection {
-    padding: 80px 40px;
+    padding: 60px 30px;
+   
   }
 
   .abouttext h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .abouttext p {
     font-size: 16px;
+    line-height: 28px;
+  }
+
+  .aboutimage img {
+    height: 380px;
   }
 
   .aboutstats .stat h4 {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .aboutstats .stat p {
+    font-size: 14px;
   }
 }
+
+@media (max-width: 480px) {
+  .aboutsection {
+    padding: 50px 20px;
+  }
+
+  .abouttext h2 {
+    font-size: 26px;
+  }
+
+  .aboutimage img {
+    height: 300px;
+  }
+
+  .aboutstats {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* section privacy */
+
+.privacy-section {
+  background: linear-gradient(135deg, #f5f8fc 0%, #e6ecf5 100%);
+  padding: 80px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.privacy-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background: #0f172a;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 60px;
+  transition: all 0.3s ease;
+}
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.privacy-header h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.privacy-header h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #0073e6;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.privacy-header p {
+  font-size: 18px;
+  color: white;
+  line-height: 28px;
+}
+
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.policy-box {
+  padding: 30px;
+  border-left: 5px solid #0073e6;
+  background: #fafbff;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.policy-box:hover {
+  background: #eef5ff;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 115, 230, 0.1);
+}
+
+.policy-box h2 {
+  font-size: 22px;
+  color: #0f1c3f;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.policy-box p {
+  font-size: 16px;
+  color: #444;
+  line-height: 28px;
+  text-align: justify;
+}
+
+.policy-box strong {
+  color: #000;
+}
+
+@media (max-width: 992px) {
+  .privacy-wrapper {
+    width: 90%;
+    padding: 40px;
+  }
+
+  .privacy-header h1 {
+    font-size: 32px;
+  }
+
+  .policy-box h2 {
+    font-size: 20px;
+  }
+
+  .policy-box p {
+    font-size: 15px;
+  }
+}
+
+
+
+
 
 
 /* sectiion footer */
