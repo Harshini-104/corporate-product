@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
 </head>
+
 <body>
-    
+
+    <!-- header section -->
+    <header class="header">
+        <nav>
+            <div class="logo">
+                <a href=""><img src="./image/logo-removebg-preview.png" alt="company logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./error.html">About</a></li>
+                <li><a href="./error.html">Service</a></li>
+                <li><a href="./error.html">Shop</a></li>
+                <li><a href="./error.html">Product</a></li>
+                <li><a href="./error.html">Dashboard</a></li>
+                <!-- <a href="./login.html"><button class="loginbtn">Login</button></a -->
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section class="login">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Welcome Back!</h2>
+                <p class="subtitle">Login to access</p>
+
+                <form>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <button type="submit" class="login-btn">Login</button>
+
+                    <div class="links">
+                        <a href="#">Forgot Password?</a>
+                        <p>Don't have an account? <a href="#">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
