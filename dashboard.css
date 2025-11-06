@@ -134,7 +134,7 @@ nav {
 
 /*Section dashboard */
 .dashboard {
-  background: #f8f9ff;
+  background: url('./image/back1.webp') center center / cover no-repeat fixed;
   padding: 100px 20px;
   text-align: center;
 }
@@ -162,7 +162,7 @@ nav {
 
 
 .dash-card {
-  background: white;
+   background: linear-gradient(135deg, rgb(227, 240, 175), rgb(187, 237, 250));
   border-radius: 15px;
   padding: 30px 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
@@ -290,7 +290,7 @@ nav {
   }
 }
 
-/* 🌌 Neon Dashboard Section */
+
 .neon-theme {
   background: linear-gradient(135deg, #000010, #0a0025);
   padding: 100px 20px;
@@ -313,7 +313,7 @@ nav {
   text-shadow: 0 0 6px #222;
 }
 
-/* Chart Layout */
+
 .chart-grid-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -322,7 +322,7 @@ nav {
   margin: 0 auto;
 }
 
-/* Neon Chart Boxes */
+
 .neon-box {
   background: rgba(15, 15, 30, 0.9);
   border-radius: 15px;
@@ -348,13 +348,13 @@ nav {
   font-weight: 600;
 }
 
-/* Canvas Sizing */
+
 .chart-box canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* 📱 Responsive Design */
+
 @media (max-width: 900px) {
   .chart-grid-two {
     grid-template-columns: 1fr;

@@ -69,10 +69,10 @@
   <!-- section product -->
 
   <section class="shopping">
-    <h1>Corporate Product Store</h1>
-    <p class="shop-subtext">Shop premium office essentials, electronics, and accessories trusted by professionals.</p>
+    <h1 data-aos="fade-up">Corporate Product Store</h1>
+    <p class="shop-subtext" data-aos="fade-up">Shop premium office essentials, electronics, and accessories trusted by professionals.</p>
 
-    <div class="shop-container">
+    <div class="shop-container" data-aos="zoom-in">
 
       <div class="shop-box">
         <img src="./image/chair.webp" alt="Office Chair">
@@ -83,7 +83,7 @@
       </div>
 
 
-      <div class="shop-box">
+      <div class="shop-box" data-aos="zoom-in">
         <img src="./image/laptopbag.webp" alt="Laptop Bag">
         <h3 class="product-name">Corporate Laptop Bag</h3>
         <p class="price">₹2,499</p>
@@ -92,7 +92,7 @@
       </div>
 
 
-      <div class="shop-box">
+      <div class="shop-box" data-aos="zoom-in">
         <img src="./image/coffee.webp" alt="Coffee Mug">
         <h3 class="product-name">Customized Coffee Mug</h3>
         <p class="price">₹399</p>
@@ -101,7 +101,7 @@
       </div>
 
 
-      <div class="shop-box">
+      <div class="shop-box" data-aos="zoom-in">
         <img src="./image/penset.webp" alt="Pen Set">
         <h3 class="product-name">Premium Pen Set</h3>
         <p class="price">₹1,299</p>
@@ -110,8 +110,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/notebook.jpg" alt="Notebook">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/notebook.webp" alt="Notebook">
         <h3 class="product-name">Corporate Notebook</h3>
         <p class="price">₹799</p>
         <p class="review">★★★★☆ (93 reviews)</p>
@@ -119,8 +119,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/desktop.webp" alt="Desk Organizer">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/desk.webp" alt="Desk Organizer">
         <h3 class="product-name">Wooden Desk Organizer</h3>
         <p class="price">₹1,899</p>
         <p class="review">★★★★★ (57 reviews)</p>
@@ -128,8 +128,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/laptop.jpeg" alt="Computer">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/laptop1.webp" alt="Computer">
         <h3 class="product-name">All-in-One Computer</h3>
         <p class="price">₹54,999</p>
         <p class="review">★★★★★ (48 reviews)</p>
@@ -137,8 +137,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/printer2.jpg" alt="Printer">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/printer1.webp" alt="Printer">
         <h3 class="product-name">Wireless Laser Printer</h3>
         <p class="price">₹18,499</p>
         <p class="review">★★★★☆ (61 reviews)</p>
@@ -146,8 +146,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/head3.jpg" alt="Headphones">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/headphone.webp" alt="Headphones">
         <h3 class="product-name">Noise-Cancelling Headphones</h3>
         <p class="price">₹7,999</p>
         <p class="review">★★★★★ (76 reviews)</p>
@@ -155,8 +155,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/keyboard.jpg" alt="Keyboard">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/keyboard.webp" alt="Keyboard">
         <h3 class="product-name">Wireless Keyboard & Mouse</h3>
         <p class="price">₹2,899</p>
         <p class="review">★★★★☆ (89 reviews)</p>
@@ -164,8 +164,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/desktop.jpg" alt="Monitor">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/desktop.webp" alt="Monitor">
         <h3 class="product-name">Full HD LED Monitor</h3>
         <p class="price">₹11,999</p>
         <p class="review">★★★★★ (73 reviews)</p>
@@ -173,8 +173,8 @@
       </div>
 
 
-      <div class="shop-box">
-        <img src="./image/usb.jpg" alt="USB Drive">
+      <div class="shop-box" data-aos="zoom-in">
+        <img src="./image/usb.webp" alt="USB Drive">
         <h3 class="product-name">64GB Corporate USB Drive</h3>
         <p class="price">₹899</p>
         <p class="review">★★★★☆ (52 reviews)</p>
@@ -247,6 +247,16 @@
       const menu = document.querySelector(".nav-links");
       menu.classList.toggle("open");
     }
+  </script>
+
+  <script>
+    // $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: false,
+      mirror: true,
+    });
   </script>
 </body>
 

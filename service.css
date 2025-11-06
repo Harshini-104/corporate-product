@@ -520,7 +520,7 @@ nav {
 /* section service */
 
 .service-section {
-  background-color: #f8f9fc;
+  background: url('./image/back1.webp') center center / cover no-repeat fixed;
   padding: 100px 120px;
   font-family: 'Poppins', sans-serif;
 }
@@ -549,13 +549,13 @@ nav {
 .service-content h1 {
   font-size: 36px;
   font-weight: 700;
-  color: #1e1e2f;
+  color: white;
   margin-bottom: 20px;
 }
 
 .service-content p {
   font-size: 18px;
-  color: #4a4a4a;
+  color: white;
   line-height: 1.6;
   margin-bottom: 25px;
 }
@@ -566,7 +566,7 @@ nav {
 
 .service-content li {
   font-size: 17px;
-  color: #333;
+  color: white;
   margin-bottom: 8px;
   list-style: none;
   position: relative;
@@ -577,7 +577,7 @@ nav {
   content: "✔";
   position: absolute;
   left: 0;
-  color: #007bff;
+  color:red;
 }
 
 .service-btn {
@@ -758,22 +758,126 @@ nav {
   color: #444;
 }
 
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .left-side {
+    width: 320px;
+  }
+
+  .right-side {
+    width: calc(100% - 320px);
+  }
+}
+
+
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 25px;
+  }
+
+  .left-side {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-side h2,
+  .right-side h2 {
+    font-size: 20px;
+  }
+
+  .left-side p,
+  .right-side p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .left-side h2,
+  .right-side h2 {
+    font-size: 18px;
+  }
+
+  .left-side p,
+  .right-side p,
+  .product-box p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .product-box {
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
+
+  .left-side,
+  .right-side {
+    padding: 10px;
+  }
+
+  .left-side h2,
+  .right-side h2 {
+    font-size: 16px;
+  }
+
+  .left-side p,
+  .right-side p {
+    font-size: 13px;
+  }
+
+  .product-box {
+    padding: 10px;
+  }
+
+  .product-box h3 {
+    font-size: 15px;
+  }
+}
 /* section help center */
 
 .help-center {
-  background: #f8f9ff;
+  background: url('./image/back1.webp') center center / cover no-repeat fixed;
   padding: 100px 20px;
   text-align: center;
 }
 
 .help-center h1 {
-  color: #1d2671;
+  color: #a7aeef;
   font-size: 32px;
   margin-bottom: 10px;
 }
 
 .help-subtext {
-  color: #555;
+  color: white;
   font-size: 18px;
   margin-bottom: 50px;
 }
@@ -787,7 +891,7 @@ nav {
 }
 
 .help-box {
-  background: white;
+  background: linear-gradient(135deg, rgb(227, 240, 175), rgb(187, 237, 250));
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 30px 20px;
