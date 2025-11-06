@@ -691,6 +691,170 @@ nav {
 }
 
 
+/* section solution */
+
+.container {
+  width: 1100px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  padding: 20px;
+}
+
+
+.left-side {
+  width: 350px;
+  padding: 20px;
+  border-right: 2px solid #e0e0e0;
+}
+
+.left-side h2 {
+  color: #1a237e;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.left-side p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+
+.right-side {
+  width: 700px;
+  padding: 20px 30px;
+}
+
+.right-side h2 {
+  color: #0d47a1;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.right-side p {
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+
+.product-box {
+  margin-top: 20px;
+  background-color: #e8f0fe;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.product-box h3 {
+  margin: 0 0 10px;
+  color: #1e3a8a;
+}
+
+.product-box p {
+  margin: 0;
+  color: #444;
+}
+
+/* section help center */
+
+.help-center {
+  background: #f8f9ff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.help-center h1 {
+  color: #1d2671;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.help-subtext {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.help-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.help-box {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  transition: transform 0.3s ease;
+}
+
+.help-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.help-box img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.help-box h3 {
+  color: #0d47a1;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.help-box p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.help-btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background: linear-gradient(135deg, red, blue);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.help-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .help-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .help-container {
+    grid-template-columns: 1fr;
+  }
+
+  .help-box {
+    padding: 20px;
+  }
+
+  .help-center h1 {
+    font-size: 26px;
+  }
+}
+
+
+
 /* sectiion footer */
 
 .footer {

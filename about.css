@@ -140,7 +140,7 @@ nav {
       rgba(10, 20, 40, 0.75),
       rgba(10, 20, 40, 0.75)
     ),
-    url('./image/background2.png') center/cover no-repeat;
+    url('./image/background1.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,7 +223,7 @@ nav {
   align-items: center;
   gap: 60px;
   padding: 100px 10%;
-  background: url("./image/bg1.jpg") no-repeat center center/cover fixed;
+  background: url("./image/bg1.webp") no-repeat center center/cover fixed;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -808,6 +808,86 @@ nav {
 }
 
 
+/* section shipping */
+
+.shipping-returns {
+  background: #ffffff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.shipping-returns h1 {
+  color: #1d2671;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.ship-subtext {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.ship-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ship-box {
+  background: #f8f9ff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 30px 20px;
+  transition: transform 0.3s ease;
+}
+
+.ship-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.ship-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.ship-box h3 {
+  color: #0d47a1;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.ship-box p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 992px) {
+  .ship-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ship-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ship-box {
+    padding: 20px;
+  }
+
+  .shipping-returns h1 {
+    font-size: 26px;
+  }
+}
 
 
 

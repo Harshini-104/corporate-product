@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+  <link rel="stylesheet" href="./shop.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header class="header">
+    <nav>
+      <div class="logo">
+        <a href=""><img src="./image/logo-removebg-preview.png" alt="company logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <a href="./login.html"><button class="loginbtn">Login</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="shop-header">
+    <div class="shop-header-container">
+
+      <div class="shop-logo">
+        <h2>Corporate Store</h2>
+      </div>
+
+
+      <div class="shop-search">
+        <input type="text" placeholder="Search for products..." id="search-input">
+        <a href="./error.html"><button id="search-btn">Search</button></a>
+      </div>
+
+
+      <div class="shop-cart">
+        <a href="./error.html" class="cart-btn">
+          <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Cart Icon">
+          <span class="cart-count">3</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- section product -->
+
+  <section class="shopping">
+    <h1>Corporate Product Store</h1>
+    <p class="shop-subtext">Shop premium office essentials, electronics, and accessories trusted by professionals.</p>
+
+    <div class="shop-container">
+
+      <div class="shop-box">
+        <img src="./image/chair.webp" alt="Office Chair">
+        <h3 class="product-name">Executive Office Chair</h3>
+        <p class="price">₹12,999</p>
+        <p class="review">★★★★☆ (120 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/laptopbag.webp" alt="Laptop Bag">
+        <h3 class="product-name">Corporate Laptop Bag</h3>
+        <p class="price">₹2,499</p>
+        <p class="review">★★★★★ (85 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/coffee.webp" alt="Coffee Mug">
+        <h3 class="product-name">Customized Coffee Mug</h3>
+        <p class="price">₹399</p>
+        <p class="review">★★★★☆ (64 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/penset.webp" alt="Pen Set">
+        <h3 class="product-name">Premium Pen Set</h3>
+        <p class="price">₹1,299</p>
+        <p class="review">★★★★★ (142 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/notebook.jpg" alt="Notebook">
+        <h3 class="product-name">Corporate Notebook</h3>
+        <p class="price">₹799</p>
+        <p class="review">★★★★☆ (93 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/desktop.webp" alt="Desk Organizer">
+        <h3 class="product-name">Wooden Desk Organizer</h3>
+        <p class="price">₹1,899</p>
+        <p class="review">★★★★★ (57 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/laptop.jpeg" alt="Computer">
+        <h3 class="product-name">All-in-One Computer</h3>
+        <p class="price">₹54,999</p>
+        <p class="review">★★★★★ (48 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/printer2.jpg" alt="Printer">
+        <h3 class="product-name">Wireless Laser Printer</h3>
+        <p class="price">₹18,499</p>
+        <p class="review">★★★★☆ (61 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/head3.jpg" alt="Headphones">
+        <h3 class="product-name">Noise-Cancelling Headphones</h3>
+        <p class="price">₹7,999</p>
+        <p class="review">★★★★★ (76 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/keyboard.jpg" alt="Keyboard">
+        <h3 class="product-name">Wireless Keyboard & Mouse</h3>
+        <p class="price">₹2,899</p>
+        <p class="review">★★★★☆ (89 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/desktop.jpg" alt="Monitor">
+        <h3 class="product-name">Full HD LED Monitor</h3>
+        <p class="price">₹11,999</p>
+        <p class="review">★★★★★ (73 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+
+
+      <div class="shop-box">
+        <img src="./image/usb.jpg" alt="USB Drive">
+        <h3 class="product-name">64GB Corporate USB Drive</h3>
+        <p class="price">₹899</p>
+        <p class="review">★★★★☆ (52 reviews)</p>
+        <a href="./error.html" class="shop-btn">Add to Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section footer -->
+
+  <!-- section footer -->
+
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-about">
+        <img src="./image/logo-removebg-preview.png" alt="logo" class="comlogo">
+        <p>
+          We simplify business purchasing by offering high-quality corporate products, verified vendors,
+          and efficient procurement solutions that empower organizations to operate smarter.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html#team">Team</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="./service.html#feature">Features</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./service.html#Center">Help Center</a></li>
+          <li><a href="./about.html#shipping">Shipping & Returns</a></li>
+          <li><a href="./about.html#privacy">Privacy Policy</a></li>
+          <li><a href="./service.html#terms">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Email:</strong> support@stackly.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 123 Business Avenue, Chennai, India</p>
+
+        <div class="social-icons">
+          <a href="./error.html"><i class="fab fa-facebook-f"></i></a>
+          <a href="./error.html"><i class="fab fa-linkedin-in"></i></a>
+          <a href="./error.html"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Stackly Product Store. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-links");
+      menu.classList.toggle("open");
+    }
+  </script>
+</body>
+
+</html>

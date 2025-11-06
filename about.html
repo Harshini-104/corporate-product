@@ -9,14 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
 
 
 </head>
@@ -33,9 +26,9 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./service.html">Service</a></li>
-        <li><a href="./error.html">Shop</a></li>
-        <li><a href="./error.html">Contact</a></li>
-        <li><a href="./error.html">Dashboard</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
         <a href="./login.html"><button class="loginbtn">Login</button></a>
       </ul>
       <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
@@ -78,13 +71,13 @@
     </div>
 
     <div class="about-image">
-      <img src="./image/computer1.jpg" alt="background image" data-aos="flip-up">
+      <img src="./image/computer1.webp" alt="background image" data-aos="flip-up">
     </div>
   </div>
 
   <!-- section team -->
 
-  <section class="team-section">
+  <section class="team-section" id="team">
     <div class="team-header">
       <h2 data-aos="fade-up">Meet Our Team</h2>
       <p data-aos="fade-up">At Stackly, our expert team drives innovation and quality — delivering reliable corporate
@@ -253,54 +246,62 @@
 
   <!-- section privacy policy -->
 
-  <section class="privacy-section">
+  <section class="privacy-section" id="privacy">
     <div class="privacy-wrapper" id="animate" class="vanta-bg">
       <div class="privacy-header">
         <h1 data-aos="fade-up">Privacy Policy</h1>
-        <p data-aos="fade-up">Your privacy is important to us. This privacy policy explains how we collect, use, and protect your
+        <p data-aos="fade-up">Your privacy is important to us. This privacy policy explains how we collect, use, and
+          protect your
           information when you use our website.</p>
       </div>
 
       <div class="privacy-content">
         <div class="policy-box">
           <h2 data-aos="fade-up">1. Information We Collect</h2>
-          <p data-aos="fade-up">We collect personal details such as your name, email, address, and payment information to process your
+          <p data-aos="fade-up">We collect personal details such as your name, email, address, and payment information
+            to process your
             orders and improve your shopping experience.</p>
         </div>
 
         <div class="policy-box">
           <h2 data-aos="fade-up">2. How We Use Your Information</h2>
-          <p data-aos="fade-up">Your information is used to process orders, enhance website performance, and send relevant updates or
+          <p data-aos="fade-up">Your information is used to process orders, enhance website performance, and send
+            relevant updates or
             offers with your consent.</p>
         </div>
 
         <div class="policy-box">
           <h2 data-aos="fade-up">3. Data Protection</h2>
-          <p data-aos="fade-up">All transactions are secured using SSL encryption and stored on protected servers to prevent unauthorized
+          <p data-aos="fade-up">All transactions are secured using SSL encryption and stored on protected servers to
+            prevent unauthorized
             access or misuse.</p>
         </div>
 
         <div class="policy-box">
           <h2 data-aos="fade-up">4. Cookies</h2>
-          <p data-aos="fade-up">We use cookies to enhance your browsing experience. You can choose to disable cookies in your browser
+          <p data-aos="fade-up">We use cookies to enhance your browsing experience. You can choose to disable cookies in
+            your browser
             settings at any time.</p>
         </div>
 
         <div class="policy-box">
           <h2 data-aos="fade-up">5. Third-Party Sharing</h2>
-          <p data-aos="fade-up">Your information is never sold. It's only shared with trusted service providers who help us operate
+          <p data-aos="fade-up">Your information is never sold. It's only shared with trusted service providers who help
+            us operate
             securely and efficiently.</p>
         </div>
 
         <div class="policy-box">
           <h2 data-aos="fade-up">6. Your Rights</h2>
-          <p data-aos="fade-up">You may request to access, update, or delete your data by contacting us through our official support email.
+          <p data-aos="fade-up">You may request to access, update, or delete your data by contacting us through our
+            official support email.
           </p>
         </div>
 
         <div class="policy-box">
           <h2 data-aos="fade-up">7. Policy Updates</h2>
-          <p data-aos="fade-up">We may revise this Privacy Policy periodically. Updated versions will be posted on this page with a new
+          <p data-aos="fade-up">We may revise this Privacy Policy periodically. Updated versions will be posted on this
+            page with a new
             revision date.</p>
         </div>
 
@@ -314,6 +315,36 @@
     </div>
 
   </section>
+
+  <!-- Shipping & Returns Section -->
+  <section class="shipping-returns" id="shipping">
+    <h1>Shipping & Returns</h1>
+    <p class="ship-subtext">We aim to deliver your products quickly and make returns hassle-free.</p>
+
+    <div class="ship-container">
+      <div class="ship-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176366.png" alt="Shipping Icon">
+        <h3>Fast & Reliable Shipping</h3>
+        <p>All orders are shipped within 2-5 business days. Tracking details are provided once your product is
+          dispatched.</p>
+      </div>
+
+      <div class="ship-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/2983/2983845.png" alt="Return Policy Icon">
+        <h3>Easy Returns</h3>
+        <p>Not satisfied with your order? You can return the product within 7 days of delivery for a full refund or
+          exchange.</p>
+      </div>
+
+      <div class="ship-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Customer Support Icon">
+        <h3>Customer Support</h3>
+        <p>Our support team is here to help you with any shipping or return concerns — available 24/7 via email or chat.
+        </p>
+      </div>
+    </div>
+  </section>
+
 
 
 
@@ -333,21 +364,21 @@
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="./error.html">Home</a></li>
-          <li><a href="./error.html">About</a></li>
-          <li><a href="./error.html">Products</a></li>
-          <li><a href="./error.html">Solutions</a></li>
-          <li><a href="./error.html">Contact</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html#team">Team</a></li>
+          <li><a href="./product.html">Products</a></li>
+          <li><a href="./service.html#feature">Features</a></li>
+          <li><a href="./contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="footer-support">
         <h4>Support</h4>
         <ul>
-          <li><a href="./error.html">Help Center</a></li>
-          <li><a href="./error.html">Shipping & Returns</a></li>
-          <li><a href="./error.html">Privacy Policy</a></li>
-          <li><a href="./error.html">Terms of Service</a></li>
+          <li><a href="./service.html#Center">Help Center</a></li>
+          <li><a href="./about.html#shipping">Shipping & Returns</a></li>
+          <li><a href="./about.html#privacy">Privacy Policy</a></li>
+          <li><a href="./service.html#terms">Terms of Service</a></li>
         </ul>
       </div>
 
@@ -371,7 +402,7 @@
     </div>
   </footer>
 
-   <script>
+  <script>
     function toggleMenu() {
       const menu = document.querySelector(".nav-links");
       menu.classList.toggle("open");

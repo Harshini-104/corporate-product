@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("./image/pink.png") no-repeat center center/cover;
+  background: url("./image/pink.webp") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,7 +167,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  background: url("./image/main.jpg") no-repeat center center/cover; 
+  background: url("./image/main.webp") no-repeat center center/cover; 
   color: #ffffff;
   overflow: hidden;
 }
@@ -306,7 +306,7 @@ nav {
 .commit-section {
   width: 100%;
   padding: 100px 80px;
-  background: url('./image/commit.jpg') center center / cover no-repeat;
+  background: url('./image/commit.webp') center center / cover no-repeat;
 
   display: flex;
   justify-content: center;
@@ -500,7 +500,7 @@ nav {
 .main-body {
   margin: 0;
   font-family: "Poppins", Arial, sans-serif;
-  background: url('./image/background1.jpg') center center / cover no-repeat fixed;
+  background: url('./image/background1.webp') center center / cover no-repeat fixed;
   color: #1a1a1a;
   display: flex;
   justify-content: center;
@@ -1309,7 +1309,7 @@ nav {
 /* section platform */
 
 .platform-section {
-  background: url('./image/background2.png') center center / cover no-repeat fixed;
+  background: url('./image/background2.avif') center center / cover no-repeat fixed;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
@@ -1569,7 +1569,7 @@ nav {
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
   }
 
   .social-icons a {
