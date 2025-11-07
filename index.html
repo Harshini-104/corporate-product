@@ -38,7 +38,12 @@
         <a href=""><img src="./image/logo-removebg-preview.png" alt="company logo">
       </div>
       <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
+        <li class="dropdown" id="homeDropdownWrapper">
+          <a href="./index.html">Home <span id="homeLink">▼</span></a>
+          <ul class="dropdown-menu" id="homeDropdown">
+            <li><a href="./home2.html">Home2</a></li>
+          </ul>
+        </li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./service.html">Service</a></li>
         <li><a href="./shop.html">Shop</a></li>
