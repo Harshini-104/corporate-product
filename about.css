@@ -518,7 +518,7 @@ nav {
 /* section mission */
 
 .aboutsection {
-  background: url("./image/bg1.jpg") no-repeat center center/cover fixed;
+  background: url("./image/bg1.webp") no-repeat center center/cover fixed;
   padding: 100px 120px;
   font-family: 'Poppins', sans-serif;
 }
@@ -706,7 +706,7 @@ nav {
 /* section privacy */
 
 .privacy-section {
-  background: linear-gradient(135deg, #f5f8fc 0%, #e6ecf5 100%);
+  background: url('./image/back1.webp') center center / cover no-repeat fixed;
   padding: 80px 0;
   font-family: "Poppins", sans-serif;
 }
