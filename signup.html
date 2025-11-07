@@ -2,249 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
 </head>
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
 
-    * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+  .main-content {
+    display: none;
+    padding: 20px;
+    text-align: center;
+  }
 
-.main-content {
-  display: none;
-  padding: 20px;
-  text-align: center;
-}
+  .header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+  }
 
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  background: linear-gradient(135deg, #1d2671, #c33764);
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
-}
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-nav {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 16px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .logo img {
+    height: 55px;
+    width: auto;
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+    transition: transform 0.3s ease;
+  }
 
-.logo img {
-  height: 55px;
-  width: auto;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
-  transition: transform 0.3s ease;
-}
+  .logo img:hover {
+    transform: scale(1.05);
+  }
 
-.logo img:hover {
-  transform: scale(1.05);
-}
+  .logo img {
+    width: 140px;
+    height: auto;
+    filter: brightness(0) invert(1);
 
-.logo img {
-  width: 140px;
-  height: auto;
-  filter: brightness(0) invert(1);
-  
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  transition: all 0.3s ease;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.5px;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #ffde59;
-}
-
-.loginbtn {
-  background: #ffffff;
-  color: #c33764;
-  border: none;
-  outline: none;
-  padding: 8px 18px;
-  border-radius: 20px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.loginbtn:hover {
-  background: #ffde59;
-  color: #1d2671;
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-}
-
-.menu-icon {
-  display: none;
-  color: #fff;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-@media (max-width: 900px) {
-  .menu-icon {
-    display: block;
   }
 
   .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background: rgba(44, 62, 80, 0.95);
-    flex-direction: column;
+    list-style: none;
+    display: flex;
     align-items: center;
-    width: 220px;
-    height: 0;
-    overflow: hidden;
-    padding-left: 32px;
-    border-radius: 0 0 0 12px;
-    transition: height 0.4s ease;
-    gap: 25px;
+    gap: 20px;
+    transition: all 0.3s ease;
   }
 
-  .nav-links.open {
-    height: 510px;
-    width: 100%;
-    padding-top: 18px;
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: color 0.3s ease;
   }
 
-  .nav-links li {
-    margin-bottom: 16px;
+  .nav-links li a:hover {
+    color: #ffde59;
   }
 
   .loginbtn {
-    margin-bottom: 16px;
+    background: #ffffff;
+    color: #c33764;
+    border: none;
+    outline: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-}
-    .signup {
-        background: url('./image/background2.png') no-repeat center center/cover;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
+
+  .loginbtn:hover {
+    background: #ffde59;
+    color: #1d2671;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-icon {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 900px) {
+    .menu-icon {
+      display: block;
     }
 
-    .signup-container {
-        width: 100%;
-        max-width: 420px;
-        padding: 30px;
-        
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: rgba(44, 62, 80, 0.95);
+      flex-direction: column;
+      align-items: center;
+      width: 220px;
+      height: 0;
+      overflow: hidden;
+      padding-left: 32px;
+      border-radius: 0 0 0 12px;
+      transition: height 0.4s ease;
+      gap: 25px;
     }
 
-    .signup-box {
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(10px);
-        padding: 40px;
-        border-radius: 15px;
-        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-        text-align: center;
+    .nav-links.open {
+      height: 510px;
+      width: 100%;
+      padding-top: 18px;
     }
 
-    .signup-box h2 {
-        color: #ddd;
-        margin-bottom: 10px;
+    .nav-links li {
+      margin-bottom: 16px;
     }
 
-    .subtitle {
-        color: #777;
-        margin-bottom: 25px;
-        font-size: 15px;
+    .loginbtn {
+      margin-bottom: 16px;
     }
+  }
 
-    .input-group {
-        text-align: left;
-        margin-bottom: 20px;
-    }
+  .signup {
+    background: url('./image/background2.png') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+  }
 
-    .input-group label {
-        display: block;
-        font-size: 14px;
-        color:  #eee;
-        margin-bottom: 5px;
-    }
+  .signup-container {
+    width: 100%;
+    max-width: 420px;
+    padding: 30px;
 
-    .input-group input {
-        width: 100%;
-        padding: 10px 12px;
-        border: 1px solid #ccc;
-        background: rgba(255, 255, 255, 0.2);
-        color: #ccc;
-        border-radius: 8px;
-        font-size: 15px;
-        outline: none;
-        transition: 0.3s;
-    }
+  }
 
-    .input-group input:focus {
-        border-color: #1d2671;
-        box-shadow: 0 0 4px rgba(29, 38, 113, 0.3);
-    }
+  .signup-box {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
 
-    .signup-btn {
-        width: 100%;
-        background: linear-gradient(135deg, #1d2671, #63d8e5)   ;
-        color: white;
-        padding: 12px;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+  .signup-box h2 {
+    color: #ddd;
+    margin-bottom: 10px;
+  }
 
-    .signup-btn:hover {
-        opacity: 0.9;
-        background: linear-gradient(135deg, #63d8e5, #1d2671);
-    }
+  .subtitle {
+    color: #777;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
 
-    p {
-      color: #ccc;
-    }
+  .input-group {
+    text-align: left;
+    margin-bottom: 20px;
+  }
 
-    .links {
-        margin-top: 20px;
-        font-size: 14px;
-    }
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #eee;
+    margin-bottom: 5px;
+  }
 
-    .links a {
-        color:  #00aaff;
-        text-decoration: none;
-        font-weight: 600;
-    }
+  .input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+  }
 
-    .links a:hover {
-        text-decoration: underline;
-    }
+  .input-group input:focus {
+    border-color: #1d2671;
+    box-shadow: 0 0 4px rgba(29, 38, 113, 0.3);
+  }
+
+  .signup-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #1d2671, #63d8e5);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .signup-btn:hover {
+    opacity: 0.9;
+    background: linear-gradient(135deg, #63d8e5, #1d2671);
+  }
+
+  p {
+    color: #ccc;
+  }
+
+  .links {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .links a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .links a:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <body>
 
-    <!-- header section -->
+  <!-- header section -->
   <header class="header">
     <nav>
       <div class="logo">
@@ -264,43 +264,49 @@ nav {
     </nav>
   </header>
 
-    <section class="signup">
-        <div class="signup-container">
-            <div class="signup-box">
-                <h2>Create Account</h2>
-                <p class="subtitle">Join our Corporate Product Store</p>
+  <section class="signup">
+    <div class="signup-container">
+      <div class="signup-box">
+        <h2>Create Account</h2>
+        <p class="subtitle">Join our Corporate Product Store</p>
 
-                <form>
-                    <div class="input-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="Enter your full name" required>
-                    </div>
+        <form>
+          <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+          </div>
 
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                    </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+          </div>
 
-                    <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Create a password" required>
-                    </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+          </div>
 
-                    <div class="input-group">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
-                    </div>
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Re-enter your password" required>
+          </div>
 
-                    <button type="submit" class="signup-btn">Sign Up</button>
+          <button type="submit" class="signup-btn">Sign Up</button>
 
-                    <div class="links">
-                        <p>Already have an account? <a href="./login.html">Login</a></p>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+          <div class="links">
+            <p>Already have an account? <a href="./login.html">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-links");
+      menu.classList.toggle("open");
+    }
+  </script>
 
 
 

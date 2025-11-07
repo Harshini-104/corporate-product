@@ -521,7 +521,7 @@ nav {
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
-    text-align: center;
+    text-align: left;
   }
 
   .social-icons a {
