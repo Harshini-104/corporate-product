@@ -613,7 +613,7 @@ h1 {
 /* sectiion footer */
 
 .footer {
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background: url('./image/footer.avif') center center / cover no-repeat fixed;
   color: #f1f5f9;
   padding: 80px 20px 30px;
   font-family: "Poppins", sans-serif;
@@ -630,9 +630,10 @@ h1 {
 .comlogo {
   width: 160px;        
   height: auto;        
-  filter: brightness(0) saturate(100%) invert(22%) sepia(93%) saturate(3043%) hue-rotate(205deg) brightness(96%) contrast(98%);
+  filter: brightness(0) invert(1);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
+
 
 
 .comlogo:hover {
@@ -642,15 +643,15 @@ h1 {
 
 
 .footer-about h3 {
-  color: #ffffff;
+  color: white;
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .footer-about p {
-  color: #94a3b8;
-  font-size: 14px;
+  color: white;
+  font-size: 15px;
   line-height: 1.8;
 }
 
@@ -659,7 +660,7 @@ h1 {
 .footer-support h4,
 .footer-contact h4 {
   font-size: 18px;
-  color: #ffffff;
+  color: white;
   margin-bottom: 15px;
   position: relative;
 }
@@ -691,19 +692,19 @@ h1 {
 .footer-support a {
   color: #cbd5e1;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16 px;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover,
 .footer-support a:hover {
-  color: #0f62fe;
+  color: #00ff44;
 }
 
 
 .footer-contact p {
-  color: #cbd5e1;
-  font-size: 14px;
+  color: white;
+  font-size: 16px;
   margin-bottom: 8px;
 }
 
@@ -767,3 +768,13 @@ h1 {
   display: none;
 }
 }
+
+
+
+
+
+
+
+
+
+
