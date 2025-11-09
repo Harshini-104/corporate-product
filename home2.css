@@ -381,7 +381,7 @@ nav {
 
 .about {
   padding: 80px 10%;
-  background: #ffffff;
+  background: url('./image/home2bg.jpg') center center / cover no-repeat fixed;
 }
 
 .about-container {
@@ -392,7 +392,7 @@ nav {
   flex-wrap: wrap;
 }
 
-/* Text section */
+
 .about-text {
   flex: 1;
   max-width: 550px;
@@ -428,7 +428,6 @@ nav {
   margin-right: 10px;
 }
 
-/* Button */
 .btn-primary {
   display: inline-block;
   padding: 10px 25px;
@@ -444,7 +443,7 @@ nav {
   background-color: #357ac8;
 }
 
-/* Image section */
+
 .about-image {
   flex: 1;
   text-align: center;
@@ -599,7 +598,7 @@ nav {
 
 .testimonials {
   padding: 80px 10%;
-  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  background: url('./image/home2bg.jpg') center center / cover no-repeat fixed;
   text-align: center;
 }
 

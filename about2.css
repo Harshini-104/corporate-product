@@ -218,7 +218,7 @@ nav {
 
 .about-corporate {
   padding: 90px 10%;
-  background: linear-gradient(135deg, #f9fbff, #ffffff);
+  background: url('./image/home2bg.jpg') center center / cover no-repeat fixed;
 }
 
 .about-content {
