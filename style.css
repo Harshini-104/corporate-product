@@ -214,7 +214,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   position: relative;
-  background: url("./image/main.webp") no-repeat center center/cover; 
+  background: url("./image/main1.webp") no-repeat center center/cover; 
   color: #ffffff;
   overflow: hidden;
 }

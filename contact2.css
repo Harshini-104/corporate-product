@@ -478,7 +478,7 @@ nav {
       rgba(10, 20, 40, 0.75),
       rgba(10, 20, 40, 0.75)
     ),
-    url('./image/aboutbg.jpg') center/cover no-repeat;
+    url('./image/aboutbg.webp') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
