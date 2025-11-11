@@ -219,9 +219,15 @@ nav {
 }
 
 
-@media (max-width: 1200px) {
+/* Base styles (your original) remain the same */
+
+/* ============================= */
+/* LARGE TABLETS (max-width: 1024px) */
+/* ============================= */
+@media (max-width: 1024px) {
   .shop-header-container {
-    padding: 15px 20px;
+    max-width: 95%;
+    padding: 0 15px;
   }
 
   .shop-logo h2 {
@@ -231,36 +237,66 @@ nav {
   .shop-search {
     width: 50%;
   }
+
+  .shop-search input {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+
+  .shop-search button {
+    padding: 9px 16px;
+    font-size: 14px;
+  }
+
+  .cart-btn img {
+    width: 32px;
+    height: 32px;
+  }
 }
 
-
-@media (max-width: 992px) {
+@media (max-width: 820px) {
   .shop-header-container {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
 
   .shop-logo {
+    flex: 1 1 100%;
     text-align: center;
   }
 
   .shop-search {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+    flex: 1 1 70%;
+    order: 2;
   }
 
   .shop-cart {
-    display: flex;
-    justify-content: center;
+    order: 3;
+  }
+
+  .shop-search input {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .shop-search button {
+    font-size: 14px;
+    padding: 8px 14px;
   }
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .shop-header {
     padding-top: 75px;
+  }
+
+  .shop-header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
   }
 
   .shop-logo h2 {
@@ -269,16 +305,20 @@ nav {
 
   .shop-search {
     width: 100%;
+    flex-direction: row;
   }
 
   .shop-search input {
     font-size: 14px;
-    padding: 9px 12px;
+    padding: 10px;
   }
 
   .shop-search button {
-    font-size: 14px;
-    padding: 9px 14px;
+    padding: 10px 15px;
+  }
+
+  .shop-cart {
+    align-self: flex-end;
   }
 
   .cart-btn img {
@@ -287,23 +327,15 @@ nav {
   }
 
   .cart-count {
-    top: -5px;
+    top: -6px;
     right: -8px;
     font-size: 11px;
-    padding: 2px 6px;
+    padding: 2px 5px;
   }
 }
 
 
-@media (max-width: 480px) {
-  .shop-header {
-    padding-top: 60px;
-  }
-
-  .shop-header-container {
-    padding: 10px 15px;
-  }
-
+@media (max-width: 420px) {
   .shop-logo h2 {
     font-size: 20px;
   }
@@ -313,18 +345,20 @@ nav {
     width: 100%;
   }
 
-  .shop-search input {
+  .shop-search input,
+  .shop-search button {
+    width: 100%;
     border-radius: 25px;
-    margin-bottom: 8px;
   }
 
   .shop-search button {
+    margin-top: 8px;
     border-radius: 25px;
-    width: 100%;
   }
 
-  .shop-cart {
-    text-align: center;
+  .cart-btn img {
+    width: 15px;
+    height: 26px;
   }
 }
 
