@@ -129,7 +129,7 @@ nav {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 100px;
+  min-width: 70px;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   list-style: none;
@@ -140,7 +140,8 @@ nav {
 
 .dropdown-menu li a {
   display: block;
-  padding: 10px 20px;
+  text-align: center;
+  /* padding: 10px 20px; */
   color: #fff;
   text-decoration: none;
   font-weight: 500;

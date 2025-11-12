@@ -849,9 +849,9 @@ nav {
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
-.ship-box img {
-  width: 80px;
-  height: 80px;
+.ship-box i {
+  font-size: 100px;
+  color: #f05108;
   object-fit: contain;
   margin-bottom: 15px;
 }
