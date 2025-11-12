@@ -656,7 +656,7 @@ nav {
 /* section about */
 
 .about-section {
-  background: url('./image/pink.png') center center / cover no-repeat fixed;
+  background: url('./image/pink.webp') center center / cover no-repeat fixed;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
