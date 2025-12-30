@@ -410,6 +410,7 @@
       <div class="footer-support">
         <h4>Support</h4>
         <ul>
+          <li><a href="./dashboard.html">Dashboard</a></li>
           <li><a href="./service.html#Center">Help Center</a></li>
           <li><a href="./about.html#shipping">Shipping & Returns</a></li>
           <li><a href="./about.html#privacy">Privacy Policy</a></li>
@@ -546,11 +547,23 @@
 
 
   <script>
-    function toggleMenu() {
-      const menu = document.querySelector(".nav-links");
-      menu.classList.toggle("open");
+  const menuIcon = document.querySelector(".menu-icon");
+  const navLinks = document.querySelector(".nav-links");
+  const dropdown = document.querySelector(".dropdown");
+  const homeLink = document.getElementById("homeLink");
+
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+
+  homeLink.addEventListener("click", (e) => {
+    if (window.innerWidth <= 900) {
+      e.preventDefault();
+      dropdown.classList.toggle("active");
     }
-  </script>
+  });
+</script>
+
 
   <script>
     window.addEventListener("load", () => {

@@ -77,7 +77,7 @@
 
         <div class="category-grid">
 
-            <div class="category-item" data-aos="zoom-in" >
+            <div class="category-item" data-aos="zoom-in">
                 <img src="./image/offessential.webp" alt="Office Essentials">
                 <div class="category-content">
                     <h3>Office Essentials</h3>
@@ -259,7 +259,7 @@
                 </div>
             </div>
 
-            
+
 
         </div>
     </section>
@@ -346,6 +346,7 @@
             <div class="footer-support">
                 <h4>Support</h4>
                 <ul>
+                    <li><a href="./dashboard2.html">Dashboard</a></li>
                     <li><a href="./service.html#Center">Help Center</a></li>
                     <li><a href="./about.html#shipping">Shipping & Returns</a></li>
                     <li><a href="./about.html#privacy">Privacy Policy</a></li>
@@ -376,11 +377,23 @@
 
 
     <script>
-        function toggleMenu() {
-            const menu = document.querySelector(".nav-links");
-            menu.classList.toggle("open");
-        }
+        const menuIcon = document.querySelector(".menu-icon");
+        const navLinks = document.querySelector(".nav-links");
+        const dropdown = document.querySelector(".dropdown");
+        const homeLink = document.getElementById("homeLink");
+
+        menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+
+        homeLink.addEventListener("click", (e) => {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                dropdown.classList.toggle("active");
+            }
+        });
     </script>
+
 
     <script>
         // $(document).on('ready', function () {
